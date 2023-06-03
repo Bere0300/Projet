@@ -3,14 +3,18 @@
     <head>
         <meta charset="utf-8">
         <title>V2VMusic,votre musique à volonté </title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="CSS/style.css">
     </head>
    <body>
-        <header> 
-            <img src="V2V MUSIC LOGO 3.png">
-            <button> Se connecter </button>
-            <button> S'inscrire</button>
-        </header> 
+        <header>
+            <div id="image">
+                <img src="image/V2V MUSIC LOGO 32.png" alt="logo">
+            </div>
+            <div id="bouton">
+                <a href ="seconnecter.html"><button >Connexion </button></a>
+                <a href = "sinscrire.html" ><button>Inscription</button></a>
+            </div>
+        </header>  
             <nav>
                 <ul>
                     <li class="menu-deroulant">
@@ -26,97 +30,93 @@
                         <a href="#">Instrumental</a> 
                     </li>
                     <li>
-                        <a href="#"> A Propos </a>
+                        <a href="APropos.html " > A Propos </a>
                     </li>
-                    <li>
-                        <a href="#"> Contact </a>
+                    <li class="bouton">
+                        <input type="search" id="rechercher" placeholder="Recherche...">
+                        <button>Valider</button>
+                        
                     </li>           
                 </ul>
             </nav>
             <br/>
         <h2> Nos Artistes </h2>
-        <p> Ici, vous retouverez tous les artistes disponibles sur le site internet.
-            <br/>Lorsque vous cliquerez sur l'artiste, vous aurez directement accès à son profil et ainsi vous pourrez l'ajouter dans vos artiste favoris.
-        </p>
         <br/>
                 <div class="image-container">
                     <figure>
-                        <img src="profil .png" alt="artsite 1">
+                        <img src="image/profil .png" alt="artiste 1">
                         <figcaption>LKD</figcaption>
                     </figure>
                     <figure>
-                        <img src="profil .png"alt="artsite 2">
+                        <img src="image/profil .png"alt="artiste 2">
                         <figcaption>ISTA</figcaption>
                     </figure>
                     <figure>
-                        <img src="profil .png"alt="artsite 3">
+                        <img src="image/profil .png"alt="artiste 3">
                         <figcaption>Artiste 3</figcaption>
                     </figure>
                     <figure>
-                        <img src="profil .png"alt="artsite 4">
+                        <img src="image/profil .png"alt="artiste 4">
                         <figcaption>Artiste 4</figcaption> 
                     </figure>
                 </div> 
 
             <br/>
-        <h2> Les Derniers Morceaux </h2>
-        <p> Ici, vous retrouverez les derniers morceaux sortis par les artistes. 
-            <br/> Lorsque vous cliquerez sur le morceaux, vous pourez l'écouter mais aussi ajouter une note et/ou un commentaire.
-        </p>
+        <h2> Dernières sorties </h2>
         <br/>
                 <div class= "image-container">
                     <figure>
-                        <a href="AUD-20230224-WA0000.mp3">
-                            <img src="play.png" alt="morceaux 1">
+                        <a href="audio/AUD-20230224-WA0000.mp3">
+                            <img src="image/play1.png" alt="morceaux 1">
                             <figcaption> LKD Ft ISTA - KIL</figcaption>              
                         </a>
                     </figure>
                     <figure>
-                        <a href="bitch complet.mp3">
-                            <img src="play.png"alt="morceaux 2">
+                        <a href="audio/bitch complet.mp3">
+                            <img src="image/play1.png"alt="morceaux 2">
                          <figcaption>ISTA - BITCH</figcaption>
                         </a>
                     </figure>
                     <figure>
-                        <a href="Ista naligiyo.mp3">
-                            <img src="play.png"alt="morceaux 3">
+                        <a href="audio/Ista naligiyo.mp3">
+                            <img src="image/play1.png"alt="morceaux 3">
                          <figcaption>ISTA - NALIGIYO</figcaption>
                         </a>
                     </figure>
                     <figure>
-                        <img src="play.png"alt="morceaux 4">
+                        <img src="image/play1.png"alt="morceaux 4">
                         <figcaption>morceaux 4</figcaption> 
                     </figure>
                 </div>
             <br/>
-        <h2> Nos Actualités</h2>
-        <p> Ici, vous aurez accès aux actulités du site, tel que les commentaires récents, les notes, mais aussi les mises à jour. </p>
+        <h2> Actualités</h2>
+        
         <footer>
             <nav>
                 <ul> 
                     <li class="menu">
                         <a href="#">Droit</a>
                     </li>
+                    <li class="menu">
+                        <a href="#">Nous Contacter</a>
+                    </li>
                     <li class="menu-deroulant">
                         <a href="#">Réseau sociaux</a>
                         <ul class = "sous-menu">
                             <div class=" image"> 
-                                <li> 
-                                    <a href = "https://instagram.com/v_2_vmusic?igshid=ZDdkNTZiNTM=" > <img src="instagram.png">
+                                <li > 
+                                    <a href = "https://instagram.com/v_2_vmusic?igshid=ZDdkNTZiNTM=" > <img src="image/instagram.png">
                                         <div class="text"><figcaption> Instagram </figcaption> </div>
                                     </a>
                                 </li>
                             </div>
                             <li> <a href = "#"> Facebook </a></li>
                             <li> <a href = "#"> Snapchat </a></li>
-                            <li> <a href = "#"> Mail </a></li>
                         </ul>  
                     </li>       
                 </ul>
             </nav>
         </footer>
-
-
 
 
    </body>
