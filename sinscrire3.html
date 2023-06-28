@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+    {% block title %} Inscription{% endblock %}
+    {% block css %}
+        {{parent()}}
+        <link rel="stylesheet" href="CSS/sinscrire3.css">
+    {% endblock %}
+   {% block body %}
+    <br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="progressbar etape" >
+                        <div class="degrade">
+                            <div title ="download2"class="progressionetape2"> <a href="sinscrire"><h3>Etape 1 </h3></a></div>
+                            <div title ="download"class="progressionetape"> <a href="pseudo.php"><h3> Etape 2</h3></a> </div>
+                            <div title ="download"class="progressionetape3">  <h3>Etape 3</h3> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div id="main">
+                <form id="form"> 
+                    <h1> Inscription</h1>
+                    <fieldset id"fieldset">
+                        <legend id="legend"> Qu'aimez-vous? : </legend>
+            
+                        <div id="choix">
+                            <input type="checkbox" id="Drill" name="Drill">
+                            <label for="Drill">Drill</label>
+                        </div>
+                        <div id="choix">
+                            <input type="checkbox" id="Rap" name="Rap">
+                            <label for="Rap">Rap</label>
+                        </div>
+                        <div id="choix">
+                            <input type="checkbox" id="Mélo" name="Mélo">
+                            <label for="Mélo">Mélo</label>
+                        </div>
+                        <div id="choix">
+                            <input type="checkbox" id="Afro" name="Afro">
+                            <label for="Afro">Afro</label>
+                        </div>
+                        <div id="choix">
+                            <input type="checkbox" id="Electro" name="Electro">
+                            <label for="Electro">Electro</label>
+                        </div>
+                    </fieldset>
+                    <button id="button">Valider</button>
+                </form>
+            </div>
+    {% endblock %}
+
+    {% block js %}
+        <script>
+            let button = document.getElementById('button')
+
+            button.addEventListener('click', ()=> {
+                alert('Félicitation ! Votre compte a été créé avec succès');
+            })
+        </script>
+    {% endblock %}

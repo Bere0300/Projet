@@ -1,0 +1,67 @@
+
+{% extends "base.html" %}
+{% block title %}Inscription{% endblock %}
+       {% block css %} 
+       {{parent()}}
+       <link rel="stylesheet" href="CSS/sinscrire.css">
+       {% endblock %}
+   {% block body %}
+   <br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="progressbar" >
+                   <div title ="download"class="progressionetape"><h2>Etape 1</h2></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <form> 
+            <h1>Inscription</h1>
+            <div class="Formulaire">
+                <label for="prenom" >Nom : </label>
+                <input type="text" id="nom" placeholder="Votre prénom"/>
+            </div>
+            <div class="Formulaire">
+                <label for="nom">Prénom :</label>
+                <input type="text" id="prenom" placeholder="Votre Nom"/>
+            </div>
+            <div class="Formulaire">
+                <label for="date de naissance">Date de naissance :</label>
+                <input type="date" id="datedenaissance" placeholder="jj/mm/aaaa">
+            </div>
+            <div class="Formulaire">
+                <label for="mail"> Adresse Mail :</label>
+                <input type="email" id="mail" placeholder="email">
+            </div>
+            <div class="Formulaire">
+                <label for="mdp" > Mot de passe :</label>
+                <input type="password" id="mdp" placeholder="Mot de passe">
+            </div>
+            <div class="Formulaire">
+                <label for="mdp"> Confirmation du mot de passe :</label>
+                <input type="password" id="mdp2" placeholder="Confirmation">
+            </div>
+            <fieldset>
+                <legend> Je suis : </legend>
+        
+                <div class="choix">
+                    <input type="radio" id="artiste" name="choix" value="Artiste">
+                    <label for="artiste">Artiste</label>
+                </div>
+        
+                <div class="choix">
+                    <input type="radio" id="auditeur" name="choix" value="Auditeur">
+                    <label for="Auditeur">Auditeur</label>
+                </div>
+            </fieldset> 
+            <button id='button' type="button" onclick="window.location.href='pseudo.php'">Suivant</button>
+        </form>
+    </div>
+    {% endblock %}
+ 
+    {% block js %} <script src="js/sinscrire.js"></script> {% endblock %}
+
+
+ 

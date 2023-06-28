@@ -1,125 +1,186 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>V2VMusic,votre musique à volonté </title>
-        <link rel="stylesheet" href="CSS/style.css">
-    </head>
-   <body>
-        <header>
-            <div id="image">
-                <img src="image/V2V MUSIC LOGO 32.png" alt="logo">
-            </div>
-            <div id="bouton">
-                <a href ="seconnecter.html"><button >Connexion </button></a>
-                <a href = "sinscrire.html" ><button>Inscription</button></a>
-            </div>
-        </header>  
-            <nav>
-                <ul>
-                    <li class="menu-deroulant">
-                        <a href="#">Musique</a>
-                        <ul class = "sous-menu">
-                            <li> <a href = "#"> Rap</a></li>
-                            <li> <a href = "#"> Drill</a></li>
-                            <li> <a href = "#"> Mélo</a></li>
-                            <li> <a href = "#"> Afro</a></li>
-                        </ul>  
-                    </li>
-                    <li class="menu">
-                        <a href="#">Instrumental</a> 
-                    </li>
-                    <li>
-                        <a href="APropos.html " > A Propos </a>
-                    </li>
-                    <li class="bouton">
-                        <input type="search" id="rechercher" placeholder="Recherche...">
-                        <button>Valider</button>
-                        
-                    </li>           
-                </ul>
-            </nav>
-            <br/>
+{% extends "base.html" %}
+
+    {% block css %}
+    {{parent()}}
+    <link rel="stylesheet" href="CSS/index.css">
+    {% endblock %}
+
+     {% block title %}V2VMusic,votre musique à volonté {% endblock %}
+     
+        
+        {% block body %}
+    <div class="main">
         <h2> Nos Artistes </h2>
         <br/>
-                <div class="image-container">
+            <div id="wrapper">
+                <div id="carousel">
+                    <div id="content">
                     <figure>
-                        <img src="image/profil .png" alt="artiste 1">
-                        <figcaption>LKD</figcaption>
-                    </figure>
+                            <img src="image/profil .png" alt="artiste 1">
+                            <figcaption>LKD</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="image/profil .png"alt="artiste 2">
+                            <figcaption>ISTA</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="image/profil .png"alt="artiste 3">
+                            <figcaption>Artiste 3</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="image/profil .png"alt="artiste 4">
+                            <figcaption>Artiste 4</figcaption> 
+                        </figure>
                     <figure>
-                        <img src="image/profil .png"alt="artiste 2">
-                        <figcaption>ISTA</figcaption>
-                    </figure>
+                            <img src="image/profil .png" alt="artiste 1">
+                            <figcaption>LKD</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="image/profil .png"alt="artiste 2">
+                            <figcaption>ISTA</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="image/profil .png"alt="artiste 3">
+                            <figcaption>Artiste 3</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="image/profil .png"alt="artiste 4">
+                            <figcaption>Artiste 4</figcaption> 
+                        </figure>
+                        <figure>
+                            <img src="image/profil .png"alt="artiste 3">
+                            <figcaption>Artiste 3</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="image/profil .png"alt="artiste 4">
+                            <figcaption>Artiste 4</figcaption> 
+                        </figure>
                     <figure>
-                        <img src="image/profil .png"alt="artiste 3">
-                        <figcaption>Artiste 3</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="image/profil .png"alt="artiste 4">
-                        <figcaption>Artiste 4</figcaption> 
-                    </figure>
-                </div> 
-
-            <br/>
-        <h2> Dernières sorties </h2>
-        <br/>
-                <div class= "image-container">
-                    <figure>
-                        <a href="audio/AUD-20230224-WA0000.mp3">
-                            <img src="image/play1.png" alt="morceaux 1">
-                            <figcaption> LKD Ft ISTA - KIL</figcaption>              
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="audio/bitch complet.mp3">
-                            <img src="image/play1.png"alt="morceaux 2">
-                         <figcaption>ISTA - BITCH</figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <a href="audio/Ista naligiyo.mp3">
-                            <img src="image/play1.png"alt="morceaux 3">
-                         <figcaption>ISTA - NALIGIYO</figcaption>
-                        </a>
-                    </figure>
-                    <figure>
-                        <img src="image/play1.png"alt="morceaux 4">
-                        <figcaption>morceaux 4</figcaption> 
-                    </figure>
+                            <img src="image/profil .png" alt="artiste 1">
+                            <figcaption>LKD</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="image/profil .png"alt="artiste 2">
+                            <figcaption>ISTA</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="image/profil .png"alt="artiste 3">
+                            <figcaption>Artiste 3</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="image/profil .png"alt="artiste 4">
+                            <figcaption>Artiste 4</figcaption> 
+                        </figure>
+                    </div>
                 </div>
+                <button id="prev">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                    </svg>
+                </button>
+                <button id="next">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    >
+                    <path fill="none" d="M0 0h24v24H0V0z" />
+                    <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                    </svg>
+                </button>
+            </div>
+    
+            <h2> Dernières sorties </h2>
             <br/>
-        <h2> Actualités</h2>
-        
-        <footer>
-            <nav>
-                <ul> 
-                    <li class="menu">
-                        <a href="#">Droit</a>
-                    </li>
-                    <li class="menu">
-                        <a href="#">Nous Contacter</a>
-                    </li>
-                    <li class="menu-deroulant">
-                        <a href="#">Réseau sociaux</a>
-                        <ul class = "sous-menu">
-                            <div class=" image"> 
-                                <li > 
-                                    <a href = "https://instagram.com/v_2_vmusic?igshid=ZDdkNTZiNTM=" > <img src="image/instagram.png">
-                                        <div class="text"><figcaption> Instagram </figcaption> </div>
-                                    </a>
-                                </li>
-                            </div>
-                            <li> <a href = "#"> Facebook </a></li>
-                            <li> <a href = "#"> Snapchat </a></li>
-                        </ul>  
-                    </li>       
-                </ul>
-            </nav>
-        </footer>
+                <div id='wrapper'>
+                    <div id= "carousel">
+                        <div id="content">
+                            <figure>
+                                <a href="audio/AUD-20230224-WA0000.mp3">
+                                    <img src="image/play1.png" alt="morceaux 1" onclick="lancer_son();">
+                                    <figcaption> LKD Ft ISTA - KIL</figcaption>              
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="audio/AUD-20230224-WA0000.mp3">
+                                    <img src="image/play1.png" alt="morceaux 1">
+                                    <figcaption> LKD Ft ISTA - KIL</figcaption>              
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="audio/bitch complet.mp3">
+                                    <img src="image/play1.png"alt="morceaux 2">
+                                <figcaption>ISTA - BITCH</figcaption>
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="audio/Ista naligiyo.mp3">
+                                    <img src="image/play1.png"alt="morceaux 3">
+                                <figcaption>ISTA - NALIGIYO</figcaption>
+                                </a>
+                            </figure>
+                            <figure>
+                                <img src="image/play1.png"alt="morceaux 4">
+                                <figcaption>morceaux 4</figcaption> 
+                            </figure>
+                            <figure>
+                                <a href="audio/AUD-20230224-WA0000.mp3">
+                                    <img src="image/play1.png" alt="morceaux 1">
+                                    <figcaption> LKD Ft ISTA - KIL</figcaption>              
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="audio/bitch complet.mp3">
+                                    <img src="image/play1.png"alt="morceaux 2">
+                                <figcaption>ISTA - BITCH</figcaption>
+                                </a>
+                            </figure>
+                            <figure>
+                                <a href="audio/Ista naligiyo.mp3">
+                                    <img src="image/play1.png"alt="morceaux 3">
+                                <figcaption>ISTA - NALIGIYO</figcaption>
+                                </a>
+                            </figure>
+                            <figure>
+                                <img src="image/play1.png"alt="morceaux 4">
+                                <figcaption>morceaux 4</figcaption> 
+                            </figure>
+                        </div>
+                    </div>
+                    <button id="prev">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        >
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                        </svg>
+                    </button>
+                    <button id="next">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        >
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                        </svg>
+                    </button>
+                </div>
+                <br/>
+            <h2> Actualités</h2>
+    </div>
+        {% endblock %}
 
+ {% block js %}<script src="js/carousel.js"></script>{% endblock %}
 
-   </body>
-
-
-</html>

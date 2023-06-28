@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+
+{% block title %}Mon Profil{% endblock %}
+
+{% block css %}
+    {{parent()}}
+    <link rel="stylesheet" href="CSS/profil.css">
+{% endblock %}
+
+{% block body %}
+<div class="main">
+        <div class='haut'>
+            <div id="pseudo">
+                <img id="profil"src="image/profil .png" alt="profil">
+            </div>
+            <div class='texte'> 
+                <h2>Pseudo</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi modi cupiditate, aspernatur, soluta cum fuga quae blanditiis consequuntur amet, quam quidem
+                    facilis voluptates id natus reprehenderit ex harum voluptatibus ipsum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro cupiditate, delectus qui corrupti minima 
+                    doloremque aliquam odio ab pariatur repellendus nemo illo voluptas natus. 
+                    Harum odio labore error ut quia. </p>   
+            </div>    
+        </div>
+        <h2> Musiques</h2>
+        <br/>
+        <div id="wrapper">
+            <div id="carousel">
+                <div id="content">
+                    <figure>
+                        <a href="audio/AUD-20230224-WA0000.mp3">
+                            <img src="image/play1.png" alt="morceaux 1" onclick="lancer_son();">
+                            <figcaption> LKD Ft ISTA - KIL</figcaption>              
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="audio/AUD-20230224-WA0000.mp3">
+                            <img src="image/play1.png" alt="morceaux 1">
+                            <figcaption> LKD Ft ISTA - KIL</figcaption>              
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="audio/bitch complet.mp3">
+                            <img src="image/play1.png"alt="morceaux 2">
+                            <figcaption>ISTA - BITCH</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="audio/Ista naligiyo.mp3">
+                            <img src="image/play1.png"alt="morceaux 3">
+                            <figcaption>ISTA - NALIGIYO</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <img src="image/play1.png"alt="morceaux 4">
+                        <figcaption>morceaux 4</figcaption> 
+                    </figure>
+                    <figure>
+                        <a href="audio/AUD-20230224-WA0000.mp3">
+                            <img src="image/play1.png" alt="morceaux 1" onclick="lancer_son();">
+                            <figcaption> LKD Ft ISTA - KIL</figcaption>              
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="audio/AUD-20230224-WA0000.mp3">
+                            <img src="image/play1.png" alt="morceaux 1">
+                            <figcaption> LKD Ft ISTA - KIL</figcaption>              
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="audio/bitch complet.mp3">
+                            <img src="image/play1.png"alt="morceaux 2">
+                            <figcaption>ISTA - BITCH</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="audio/Ista naligiyo.mp3">
+                            <img src="image/play1.png"alt="morceaux 3">
+                            <figcaption>ISTA - NALIGIYO</figcaption>
+                        </a>
+                    </figure>
+                    <figure>
+                        <img src="image/play1.png"alt="morceaux 4">
+                        <figcaption>morceaux 4</figcaption> 
+                    </figure>
+                </div>
+            </div>
+            <button id="prev">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                </svg>
+            </button>
+            <button id="next">
+                <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                </svg>
+            </button>
+        </div>
+    
+   
+        <div class='note'>
+            <div class="texte">
+            <h2>Commentaires récents</h2>
+            </div>
+        </div>
+        
+    </div>        
+    
+{% endblock %}
+
+{% block js %} <script src="js/carousel.js"></script>{% endblock %}
