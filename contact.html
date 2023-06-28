@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Nous Contacter{% endblock %}
+{% block css %}
+    {{parent()}}
+    <link rel="stylesheet" href="CSS/contact.css">
+    
+{% endblock %}
+{% block body %}
+
+<div id='main'>
+    <form>
+        <h1>Nous Contacter</h1>
+        <div class="formulaire">
+            <label for="exampleFormControlInput1" class="form-label">Pseudo : </label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre pseudo">
+        </div>
+        <div class="formulaire">
+            <label for="exampleFormControlInput1" class="form-label">Adresse Mail : </label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="exemple@exemple.com">
+        </div>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Sélectionner une catégorie</option>
+            <option value="1">Problème de connexion</option>
+            <option value="2">Gestion du compte</option>
+            <option value="2">Importation</option>
+            <option value="3">Autre</option>
+        </select>
+        <div class="commentaire">
+            <label for="exampleFormControlTextarea1" class="form-label">Votre message : </label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder='Votre Message'></textarea>
+        </div>
+        <button id='button'>Envoyer</button>
+    </form>
+</div>
+{% endblock %}
+
+{% block js %} <script>
+
+        let button = document.getElementById('button')
+
+                button.addEventListener('click', ()=> {
+                    alert('Votre message a été envoyé avec succès');
+                })
+    </script>
+
+{% endblock %}

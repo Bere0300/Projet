@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %}<link rel="stylesheet" href="CSS/style.css">{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <header>
+        <div id="image">
+          <a href="index.php"><img src="image/V2V MUSIC LOGO 32.png" alt="logo"></a> 
+        </div>
+        <div id="bouton">
+            <a href="seconnecter.php"><button >Connexion </button></a>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li class="menu">
+                <a href="index.php"><img class="home"src="image/home.png" alt="home" ></a> 
+            </li>
+            <li class="menu-deroulant">
+                <a href="#">Musique</a>
+                <ul class = "sous-menu">
+                    <li> <a href = "#"> Rap</a></li>
+                    <li> <a href = "#"> Drill</a></li>
+                    <li> <a href = "#"> Mélo</a></li>
+                    <li> <a href = "#"> Afro</a></li>
+                </ul>  
+            </li>
+            <li class="menu">
+                <a href="#">Instrumental</a> 
+            </li>
+            <li>
+                <a href="apropos.php" > A Propos </a>
+            </li>
+            <li class="bouton">
+                <input type="search" id="rechercher" placeholder="Recherche...">
+                <button>Valider</button>
+                
+            </li>           
+        </ul>
+    </nav>
+
+    <main>
+        {% block body %} {% endblock %}
+    </main>
+
+         <footer>
+            <nav>
+                <ul> 
+                    <li class="menu">
+                        <a href="#">Droit</a>
+                    </li>
+                    <li class="menu">
+                        <a href="contact.php">Nous Contacter</a>
+                    </li>
+                    <li class="menu-deroulant">
+                        <a href="#">Réseau sociaux</a>
+                        <ul class = "sous-menu">
+                            <div class=" image"> 
+                                <li > 
+                                    <a href = "https://instagram.com/v_2_vmusic?igshid=ZDdkNTZiNTM=" > <img src="image/instagram.png">
+                                        <div class="text"><figcaption> Instagram </figcaption> </div>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class=" image"> 
+                                <li > 
+                                    <a href = "#" > <img src="image/Facebook.png">
+                                        <div class="text"><figcaption> Facebook </figcaption> </div>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>  
+                    </li>       
+                </ul>
+            </nav>
+        </footer>
+
+        {% block js %}{% endblock %}
+
+
+    
+</body>
+</html>

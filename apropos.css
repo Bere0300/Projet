@@ -1,0 +1,32 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin-bottom: 40px;
+    font-size: 45px;
+
+}
+h2{
+    font-size:30px;
+    text-decoration: underline;
+    color: black;
+}
+p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    line-height: 35px;
+    text-align: justify;
+    color: black;
+}
